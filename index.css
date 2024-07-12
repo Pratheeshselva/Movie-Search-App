@@ -3,17 +3,21 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    height:100%;
+    height: 100%;
     background: linear-gradient(to right, #141E30, #243B55);
     color: #ffffff;
 }
 
-.searchcontainer{
+.searchcontainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-   
+
+.centrediv {
+    text-align: center;
+}
+
 
 
 h1 {
@@ -22,22 +26,33 @@ h1 {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 960px) {
-    body{ display: inline-block;
+@media only screen and (max-width: 1100px) {
+    .secondrow {
+        display: block
     }
-    #searchForm{
-        margin:0px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    body{
+        display: block;
     }
     
-    .secondrow{
+
+    #searchForm {
+        margin: 0px;
+    }
+
+    .secondrow {
         margin-top: 20px;
     }
-   
+
 }
 
 
 @media only screen and (max-width: 768px) {
-.btn{
-    margin-top:10px;
- }
+    .btn {
+        margin-top: 10px;
+    }
 }
