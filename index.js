@@ -16,10 +16,7 @@ async function searchmovie(title) {
     try {
         const req_url = API_url + `t=${title}` + `&apikey=${API_key}`
         const res = await fetch(req_url, {
-            method: "GET",
-            headers:{
-                "Content-Type": "application/json"
-            }
+            method: "GET"
         })
         const data = await res.json();
         if(data.Response=="True"){
