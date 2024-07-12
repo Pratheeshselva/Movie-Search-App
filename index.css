@@ -26,30 +26,37 @@ h1 {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
     .secondrow {
         display: block
     }
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 999px) {
 
-    body{
+    body {
         display: block;
-    }
-    
-
-    #searchForm {
-        margin: 0px;
     }
 
     .secondrow {
         margin-top: 20px;
     }
 
+    .centrediv,
+    .movieimgdiv {
+        text-align: center;
+    }
+
+
 }
 
+@media only screen and (max-width: 605px) {
+    .searchinput {
+        margin-right: 16px;
+        padding-right: 12px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .btn {
