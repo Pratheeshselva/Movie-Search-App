@@ -1,4 +1,4 @@
-let API_url = "http://www.omdbapi.com/?t="
+let API_url = "https://www.omdbapi.com/?t="
 let API_key = "a8fb63d"
 
 const displayimg = document.querySelector('.displayimg')
@@ -16,7 +16,10 @@ async function searchmovie(title) {
     try {
         const req_url = API_url + title + `&apikey=${API_key}`
         const res = await fetch(req_url, {
-            method: "GET"
+            method: "GET",
+            headers:{
+                "Content-Type": "application/json"
+            }
         })
         const data = await res.json();
         if(data.Response=="True"){
