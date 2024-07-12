@@ -1,4 +1,4 @@
-let API_url = "https://www.omdbapi.com/?t="
+let API_url = "https://www.omdbapi.com/?"
 let API_key = "a8fb63d"
 
 const displayimg = document.querySelector('.displayimg')
@@ -14,7 +14,7 @@ document.querySelector('#searchForm').addEventListener('submit', () => {
 
 async function searchmovie(title) {
     try {
-        const req_url = API_url + title + `&apikey=${API_key}`
+        const req_url = API_url + `t=${title}` + `&apikey=${API_key}`
         const res = await fetch(req_url, {
             method: "GET",
             headers:{
