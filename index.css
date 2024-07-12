@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height:100%;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.searchcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+    body{ display: block;}
+    #searchForm{
+        margin:0px;
+    }
+    
+    .secondrow{
+        margin-top: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+.btn{
+    margin-top:10px;
+ }
+}
